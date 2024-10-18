@@ -67,8 +67,8 @@ const Footer = () => {
         border-t-[1px] border-t-[#3F3E45]">
         
           <p className="font-poppins font-medium text-[18px]
-          leading-[27px] text-white">
-           2024 HooBank. 
+          leading-[27px] text-white" id="year">
+           {`2023 - ${new Date().getFullYear() }`} HooBank. 
           All Rights Reserved.</p>
           
 
@@ -82,7 +82,7 @@ const Footer = () => {
               'mr-6' : 'mr-0'}`} />
             ))}
           </div>
-          <div className='developer'><p>Designed & developed by: <a href='https://wa.me/00237653047908'>Che Phestus</a></p>
+          <div className='developer'><p>Designed & developed by: <a href='https://wa.me/00237653047908'>Phestus</a></p>
           <p><a href='mailto:fphest@gmail.com'>fphest@gmail.com</a> </p>
           </div>
         </div>

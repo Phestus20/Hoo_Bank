@@ -1,19 +1,34 @@
 import React from 'react'
 import styles from '../style'
 import { discount, robot } from '../assets'
-import GetStarted from './GetStarted'
+import GetStarted from './GetStarted';
+import Overlay from './Overlay';
+import { useState } from 'react';
 
-const Hiro = () => {
+
+import Form from './Form';
+
+const Hiro = (form) => {
+
+
   return (
+
     <div className={`flex md:flex-row
     flex-col ${styles.paddingY}`} id='home'>
 
+    {/*showForm && (
+      <Overlay>
+        <Form />
+      </Overlay>
+    )*/}
+
       <div className={`flex-1 ${styles.flexStart}
       flex-col xl:px-0 sm:px-16 px-6`}>
+        
 
         <div className="flex flex-row items-center
         py-[6ps] px-4 bg-discount-gradient
-        round-[10px] mb-2">
+        round-[10px] mb-2 ">
 
           <img src={discount} alt="discount" 
           className="w-[32px] h-[32px]" />
@@ -44,7 +59,14 @@ const Hiro = () => {
           
 
           <div className="ss:flex hidden md:mr-4 mr-0">
-            <GetStarted />
+            
+          <GetStarted 
+  toggleForm={() => setShowForm(true)} 
+/>
+            
+             
+
+
           </div>
          </div>
 

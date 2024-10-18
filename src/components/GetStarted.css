@@ -1,0 +1,89 @@
+
+.started{
+    position: relative;
+   }
+   /* custom   GetStarted.css  file*/
+   
+
+   .container {
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+   
+  }
+
+  .sign-up, .login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    padding: 50px;
+    background-color: #393d56;
+    box-shadow: rgba(0,0,0,.35) 0px 5px 15px;
+    border-radius: 20px;
+    z-index: 1000;
+  
+  }
+
+
+   label{
+     font-size: 12px;
+     margin-bottom: 2px;
+     font-size: medium;
+     font-weight: 700;
+   }
+   
+   input[type=text],input[type=email],
+   input[type=password]{
+     border: 1px solid #150;
+     width: 300px;
+     height: 34px;
+     outline: none;
+     padding-left: 10px;
+     padding-right: 10px;
+     margin-bottom: 20px;
+     font-size: 14px;
+     font-weight: 100;
+     border-radius: 5px;
+   }
+   
+
+  /* GetStarted.css */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.758);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  .overlay {/* prevent tthe page from scrolling*/
+    overflow: hidden;
+  }
+  
+  
+  .btn-close {
+    display: block;
+    margin-top: 1rem;
+    background-color: #e53e3e;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+
+  /* signup*/
+
+  /* In SignUp.css */
+
+
+
